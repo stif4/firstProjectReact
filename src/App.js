@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import ChartContainer from './elements/chart/chartContainer';
+import MainWeatherContainer from './elements/mainWeather/mainWeatherContainer';
+import SearchContainer from './elements/search/searchContainer';
+import TimeClass from './elements/time/timeClass';
+import WeekWeatherContainer from './elements/weekWeather/weekWeatherContainer';
+import Loader from './elements/common/Loader'
+import { connect } from 'react-redux';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+    return (
+      <div className="App">
+        <div className="wrapper">
+          <main className="page">
+            <div className="page__container">
+              <div className="content">
+                <div className="content__section1">
+                  <SearchContainer />
+                  <TimeClass />
+                </div>
+                {props.isFetching ? <Loader /> :
+                  <><MainWeatherContainer />
+                    <WeekWeatherContainer />
+                    <ChartContainer /></>}
+              </div>
+            </div>
+          </main>
+        </div>
+      </div >
+    );
 }
-
 export default App;

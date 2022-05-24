@@ -1,0 +1,121 @@
+/*********main*************/
+.todayWeather {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    border-radius: 10px;
+    background-color: rgba(23, 16, 66, 0.8);
+    -webkit-box-shadow: 0px 15px 23px -9px #000000;
+            box-shadow: 0px 15px 23px -9px #000000;
+    margin-top: 10px;
+  }
+  
+  .leftData {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px 20px 20px;
+  }
+  
+  .mainData {
+    margin-top: -18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .temp {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+  }
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .subData {
+    margin-top: -18px;
+  }
+  
+  .feels {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .discription {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .rifghtData {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .rifghtData > ::after {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid rgba(219, 58, 0, 0.886);
+    border-bottom: 5px solid transparent;
+  }
+  
+  .rifghtData > :not(:last-child) {
+    padding-bottom: 5px;
+  }
+  
+  .precipitationVolume {
+    position: relative;
+  }
+  
+  .wind {
+    position: relative;
+  }
+  
+  .humidity {
+    position: relative;
+  }
+  
+  /*********main*************/

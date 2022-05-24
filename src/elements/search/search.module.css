@@ -1,0 +1,77 @@
+/**************search**************/
+.search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+  }
+  
+  .input {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    -webkit-box-shadow: 0px 15px 23px -9px #000000;
+            box-shadow: 0px 15px 23px -9px #000000;
+    margin-right: 10px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    min-width: 300px;
+  }
+  
+  .search__button {
+    position: relative;
+  }
+  
+  .button {
+    cursor: pointer;
+  }
+  
+  .btn {
+    width: 80px;
+    height: 60px;
+    background-color: rgba(23, 16, 66, 0.8);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 15px 23px -4px #000000;
+            box-shadow: 0px 15px 23px -4px #000000;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover .btn {
+    background-color: rgba(23, 16, 66, 0.95);
+  }
+  
+  .button:hover .icon {
+    left: 43%;
+    top: 49%;
+    -webkit-transform: translate(-57%, -51%);
+            transform: translate(-57%, -51%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /**************search**************/
