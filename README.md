@@ -1,5 +1,5 @@
 
-# https://stif4.github.io/firstProjectReact/ - Demo view
+# https://stif4.github.io/firstProjectReact/ - Demo view. API рабоатет только с vpn
 
 
 # Getting Started with Create React App
